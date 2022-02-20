@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El senado vota</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+
+    <link rel="stylesheet" href="css/medio-main.css">
+    <link rel="stylesheet" href="../../animate.css">
+    <link rel="stylesheet" href="css/senadores_leyes.css" />
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Fundacion Conocimiento Abierto Argentina" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://conocimientoabierto.org" />
+    <meta property="og:image" content="https://conocimientoabierto.org/img/icon/logo.png" />
+    <meta property="og:description" content="El 8 de agosto se debatirá en el senado de la Nación el proyecto de ley que impulsa la despenalización y legalización del aborto llamada 'Ley de Interrupción Voluntaria del Embarazo.' El proyecto de ley tiene media sanción de la Cámara de Diputados." />
+
+      <!-- Twitter Cards data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@okfnar" />
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setDomains", ["*.conocimientoabierto.org","*.www.conocimientoabierto.org"]]);
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["disableCookies"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.conocimientoabierto.org/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//analytics.conocimientoabierto.org/piwik.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Matomo Code -->
+  </head>
+
+  <body>
+
+<div class="container is-fluid">
+   <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#" style="font-weight:bold;">
+            Sin Nombre
+          </a>
+          <span class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="#" class="navbar-item is-active">Incio</a>
+            <a href="#" class="navbar-item">Quienes Somos</a>
+            <a href="#" class="navbar-item">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+        </div><!--/container -->
+
+    <section class="hero is-info is-medium">
+      <div class="hero-body">
+        <div class="container">
+                <div class="datelg">8 AGOSTO 2018</div>
+
+          <h1 class="title">
+            El Senado Vota!
+          </h1>
+          <p class="subtitle">
+           Interactivo que compara las votaciones de senadores nacionales a una serie de 9 leyes sancionadas que permiten la ampliación de derechos a los ciudadanos con el "poroteo" público actualizado sobre el proyecto de ley de aborto.
+          </p>
+          <img src="imgs/arrow.png" width="50px" class="animated bounce infinite" id="arrow">
+        </div>
+      </div>
+    </section>
+
+<div class="sharing">
+
+    <button>
+    <i class="fa fa-heart" aria-hidden="true"></i><span class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;Me gusta</span></button>
+
+    <button><i class="fab fa-twitter" aria-hidden="true"></i><span class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;Tweet</span></button>
+
+    <button><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;Compartir</span></button>
+</div>
+
+    <section class="section" id="less">
+      <div class="container intro">
+
+        <div class="by-line">
+          <span class="by">Por</span> <a href="https://twitter.com/yasgarcia" target="blank">Yas Garcia</a>, <a href="https://twitter.com/alidepsky" target="blank">Alison Depsky</a>, <a href="https://twitter.com/fnbellomo" target="blank">Franco Bellomo</a> <span class="by">y</span> <a href="https://twitter.com/roque_db_" target="blank">Roque De Benedictus</a>
+        </div>
+        <div class="fecha">1 de Augusto, 2018</div><br>
+
+        <p>
+          <span class="intro-first">El 8 de agosto</span> se debatirá en el senado de la Nación el proyecto de ley que impulsa la despenalización y legalización del aborto llamada "Ley de Interrupción Voluntaria del Embarazo", con media sanción de la Cámara de Diputados. En la visualización interactiva se puede encontrar a los senadores nacionales que mantienen una representación actual y los senadores con mandato cumplido que fueron parte de la sanción a dichas leyes y con la votación correspondiente, permitiendo ubicar a los legisladores de la cámara alta en las provincias así como por ley. Senado vota! nos muestra diferentes tendencias políticas individuales y de bloque ante estas leyes seleccionadas.
+        </p>
+
+      </div>
+    </section>
+
+
+    <div class="btns">
+      <button id="vista-leyes">Por Persona</button>&nbsp; &nbsp; &nbsp; <button id="vista-mapa">Por Provincia</button>
+    </div>
+
+    <div id="btns2">
+      <p>Haz click en un senador para ver como votaron en cada ley</p>
+
+      <div class="btns2">
+        <button id="vista-actuales">Actuales</button><button id="vista-histricos">Históricos</button>
+      </div>
+    </div>
+
+
+    <div class="questioncontainer" id="whatwhat">
+      <p>Haz click en una provincia para zoom</p>
+      <div class="btns3">
+        <button onClick="plotMapActuales()">Actuales</button><button onClick="plotMap()">Históricos</button>
+      </div>
+      <select id="myList" >
+        <option value="todas">Todas las leyes</option>
+        <option value='Proyecto de legalizacion del aborto'>
+        Proyecto de legalizacion del aborto
+        </option>
+        <option value='Proyecto de legalizacion del aborto (con modificaciones)'>
+        Proyecto de legalizacion del aborto (con modificaciones)!
+        </option>
+        <option value="matrimonio igualitario">Matrimonio igualitario</option>
+        Interactivo que compara las votaciones de senadores nacionales a una serie de 9 leyes sancionadas que permiten la ampliación de derechos a los ciudadanos y el "poroteo" público actualizado.
+        <option value="regimen de personal domestico">Regimen de personal domestico</option>
+        <option value="reproducción medicamente asistida">Reproducción medicamente asistida</option>
+        <option value="ley de trata y asistencia a las victimas">Ley de trata y asistencia a las victimas</option>
+        <option value="educación sexual integral">Educación sexual integral</option>
+        <option value="asignación universal">Asignación universal</option>
+        <option value="reforma provicional">Reforma provicional</option>
+        <option value="subsidios a huérfanos por femicidio">Subsidios a huérfanos por femicidio</option>
+      </select>
+    </div>
+
+    <div class="outer">
+      <p style="text-align:center; background:#F9DB5A; padding:10px;" id="outer_p">Scroll para explorar >></p>
+        <div id="thing">
+          <div class="svg-graph">
+
+            <div class="columns">
+              <svg id="graph"></svg>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="h2-title">Aclaraciones técnicas</h2>
+        <p>
+          Utilizamos las bases de datos del politólogo Andy Tow que comparte en su proyecto Década Votada en formato abierto, los proyectos de ley de la página web del Senado de Nación, agregamos las fotos de los senadores con mandato cumplido y sumamos la actualización del "poroteo" público y colectivo. Analizamos y procesamos los datos en python para su procesamiento y diseñamos la visualización interactiva en D3.js.
+        </p>
+        <br>
+                <br>
+
+        <br>
+
+      </div>
+    </section>
+
+<div class="quiensomos">
+       <section class="section2">
+      <h2 class="h2-title green">¿Quiénes Somos?</h2>
+      <p class="has-text-centered quiensomos">
+Un equipo de periodistas, diseñadores, desarrolladores y científicos de datos.      <div class="buttons is-centered">
+ <a class="button is-large is-centered" href="">Leer Más</a></div>
+  </section>
+    </div>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+       <a href="">SIN NOMBRE</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
+  </div>
+</footer>
+
+    <!-- Plot tool tip -->
+    <div id="tooltip" class="hidden">
+      <p id="value"></p>
+    </div>
+
+    <script src="data/translate.js"></script>
+    <script src="js/senadores_leyes.js"></script>
+
+        <script type="text/javascript">
+      (function() {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#'+burger.dataset.target);
+        burger.addEventListener('click', function(){
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+      })();
+    </script>
+  </body>
+</html>

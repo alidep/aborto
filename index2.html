@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/senadores_leyes.css" />
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Open Graph data -->
+  <meta property="og:title" content="Fundacion Conocimiento Abierto Argentina" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://conocimientoabierto.org" />
+  <meta property="og:image" content="https://conocimientoabierto.org/img/icon/logo.png" />
+  <meta property="og:description" content="El 8 de agosto se debatirá en el senado de la Nación el proyecto de ley que impulsa la despenalización y legalización del aborto llamada 'Ley de Interrupción Voluntaria del Embarazo.' El proyecto de ley tiene media sanción de la Cámara de Diputados." />
+
+    <!-- Twitter Cards data -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@okfnar" />
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+    _paq.push(["setDomains", ["*.conocimientoabierto.org","*.www.conocimientoabierto.org"]]);
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.conocimientoabierto.org/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', '2']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//analytics.conocimientoabierto.org/piwik.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+  <!-- End Matomo Code -->
+  </head>
+
+  <body>
+    <div class="btns">
+      <button id="vista-leyes">Por Persona</button><button id="vista-mapa">Por Provincia</button>
+    </div>
+
+    <div id="btns2">
+      <p>Haz click en un senador para ver como votaron en cada ley</p>
+
+      <div class="btns2">
+        <button id="vista-actuales">Actuales</button><button id="vista-histricos">Historicales</button>
+      </div>
+    </div>
+
+    <div class="questioncontainer" id="whatwhat">
+      <p>Haz click en un provincia para zoom</p>
+      <div class="btns3">
+        <button onClick="plotMapActuales()">Actuales</button><button onClick="plotMap()">Historicales</button>
+      </div>
+      <select id="myList" >
+        <option value="todas">Todas las leyes</option>
+        <option value="matrimonio igualitario">Matrimonio igualitario</option>
+        <option value="identidad de género">Identidad de género</option>
+        <option value="regimen de personal domestico">Regimen de personal domestico</option>
+        <option value="reproducción medicamente asistida">Reproducción medicamente asistida</option>
+        <option value="ley de trata y asistencia a las victimas">Ley de trata y asistencia a las victimas</option>
+        <option value="educación sexual integral">Educación sexual integral</option>
+        <option value="asignación universal">Asignación universal</option>
+        <option value="reforma provicional">Reforma provicional</option>
+        <option value="subsidios a huérfanos por femicidio">Subsidios a huérfanos por femicidio</option>
+      </select>
+    </div>
+<div class="outer">
+  <p style="text-align:center; background:#F9DB5A; padding:10px;" id="outer_p">Scroll to Explore >></p>
+    <div id="thing">
+      <div class="svg-graph">
+
+        <div class="columns">
+          <svg id="graph"></svg>
+        </div>
+
+      </div>
+    </div>
+</div>
+    <footer class="footer">
+      <div class="columns is-gapless is-centered">
+        <div class="column is-one-quarter">
+          <img src="imgs/logofca.png" id="footerimg">
+        </div>
+      </div>
+
+      <br>
+      <div class="content has-text-centered">
+        <p style="color:#fff;">
+          Este sitio web se encuentra licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY SA 4.0</a>. <img src="imgs/creativecommons.png" width="75px">
+        </p>
+      </div>
+    </footer>
+
+    <!-- Plot tool tip -->
+    <div id="tooltip" class="hidden">
+      <p id="value"></p>
+    </div>
+
+    <script src="data/translate.js"></script>
+    <script src="js/senadores_leyes.js"></script>
+  </body>
+</html>
