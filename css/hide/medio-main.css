@@ -1,0 +1,248 @@
+.navbar{
+font-family: 'Hind', sans-serif;
+font-weight: 700;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+/*.navbar-item  {
+  max-height: 6rem;
+}
+
+.navbar-item img {
+  max-height: 4rem;
+}
+*/
+a.navbar-item, a.navbar-item.is-active {
+  display: inline-block;
+  font-size: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+a.navbar-item.is-active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #6cf6fb;
+}
+
+a.navbar-item:hover {
+  background: transparent;
+  color: #FE6952;
+  border-width: 3px;
+}
+
+a.navbar-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #FE6952;
+    transition: width .3s;
+}
+
+a.navbar-item:hover::after {
+    width: 100%;
+}
+
+.navbar-brand a.navbar-item::after {
+  height: 0px;
+}
+
+.navbar-burger span {
+  height: 3px;
+  width: 20px;
+}
+
+.navbar-burger span:nth-child(1) {
+  top: calc(50% - 8px);
+}
+
+.navbar-burger span:nth-child(3) {
+  top: calc(50% + 6px);
+}
+
+
+
+.section {
+    padding: 1rem 1.5rem;}
+
+
+
+.hero.is-info .title {
+    color: #FE6952;
+  font-family: 'Hind', sans-serif;
+  font-size:6em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+.hero.is-info .subtitle{
+  font-family: 'Inconsolata', monospace;
+  font-size:21px;
+}
+.hero-body
+{
+  background: url('images2/bgmain.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+h1{   
+  font-family: 'Hind', sans-serif;
+  font-size:46px;
+  text-transform: uppercase;
+  font-weight: 700;}
+
+}   
+
+h2 {
+  font-family: 'Inconsolata', monospace;
+  font-size:28px;
+  font-weight: 700;
+  color: #183F63;
+}
+
+.title{
+  font-family: 'Hind', sans-serif;
+  font-size:36px;
+
+}
+
+
+.datasm{
+color:#FE6952;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: 700;
+font-family: 'Hind', sans-serif;
+padding-bottom:5px;
+padding-top:15px;
+}
+.button{
+  border-radius: 0;
+  border-width: 1.5px;
+  border-color: #5358FF;
+  font-family: 'Hind', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;;
+  box-shadow: 5px 5px #D400F7;
+  transition: 0.3s;
+  letter-spacing: .08125rem;
+}
+.button:hover{
+  border-width: 1.5px;
+  border-color: #D400F7;
+  background-color: #E7FCFF;
+  box-shadow: 5px 5px #5358FF;
+}
+
+.button:active {
+  border-width: 1.5px;
+  border-color: #D400F7;
+  background-color: #E7FCFF;
+  box-shadow: 0px 0px #5358FF;
+  transform: translateY(5px);
+  transform: translateX(5px);
+
+}
+
+.button.is-large {
+    font-size: 1.2rem;
+    padding: 25px;}
+
+p{
+  font-family: 'Inconsolata', monospace;
+  font-size:18px;
+  font-weight: 700;
+}
+#Herramientas
+{
+  border-style: solid;
+  border-width: 3px;
+  border-color: #000;
+ padding: 0px;
+  margin: 30px;
+  max-width: 400px;
+  
+}
+
+.inside{
+  padding: 25px;
+  max-width: 400px;
+}
+
+.story2{
+  text-align: center;
+  padding: 50px;
+  height: 300px;
+  background: url('images2/dolar.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.story2:hover{
+   color:#03008e;
+  background: url('images2/invert-dolar.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.story2 h1{
+  color:#FEFF86;
+}
+
+.story2 h1:hover{
+  color:#03008e;
+}
+.story3{
+  text-align: center;
+  padding: 50px;
+  height: 300px;
+  background: url('images2/map.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.story3:hover{
+   color:#03008e;
+  background: url('images2/invert-map.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.story3 h1{
+  color:#AFFFCC;
+}
+.story3 h1:hover{
+  color:#6a0037;
+}
+
+.story4{
+  text-align: center;
+  padding: 50px;
+  height: 300px;
+  background: url('images2/lottery.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.story4:hover{
+   color:#03008e;
+  background: url('images2/invert-lott.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.story4 h1{
+  color:#FF6B68;
+}
+
+.story4 h1:hover{
+  color:#00a19d;
+}
+
